@@ -1,6 +1,7 @@
 import Carousel from '../components/Carousel';
 import ReactImage from '../assets/mdb-react-small.png';
 
+
 import Head from 'next/head'
 
 

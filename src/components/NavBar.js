@@ -14,26 +14,53 @@ import {
 } from 'mdbreact';
 
 class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false
-    };
-  }
-
-  toggleCollapse = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+  state = {
+    collapsed: false
   };
 
+  handleTogglerClick = () => {
+    const { collapsed } = this.state;
+
+    this.setState({
+      collapsed: !collapsed
+    });
+  };
+  componentDidMount() {
+    document.querySelector('nav').style.height = '65px';
+  }
+
+  componentWillUnmount() {
+    document.querySelector('nav').style.height = 'auto';
+  }
+
   render() {
+    const { collapsed } = this.state;
+    const navStyle = { marginTop: '1rem' };
+    const overlay = (
+      <div
+        id='sidenav-overlay'
+        style={{ backgroundColor: 'white', color: 'black' }}
+        onClick={this.handleTogglerClick}
+      />
+    );
     return (
       <>
-        <MDBNavbar color='indigo' dark expand='md'>
+       <MDBNavbar
+              color='primary-color'
+              style={navStyle}
+              dark
+              expand='md'
+              fixed='top'
+              scrolling
+              transparent
+            >
           <MDBNavbarBrand>
-            <strong className='white-text'>Navbar</strong>
+            <strong className='white-text'>JohnMogi</strong><br/>
+            חשיבה | עיצוב | פרונט
           </MDBNavbarBrand>
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
-          <MDBCollapse id='navbarCollapse3' isOpen={this.state.isOpen} navbar>
+          <MDBNavbarToggler onClick={this.handleTogglerClick} />
+                <MDBCollapse isOpen={collapsed} navbar>
+          
             <MDBNavbarNav left>
               <MDBNavItem>
                 <Link href='/'>
@@ -43,6 +70,12 @@ class Layout extends React.Component {
               <MDBNavItem>
                 <Link href='/register'>
                   <a className='nav-link'>Register</a>
+                </Link>
+              </MDBNavItem>
+        
+              <MDBNavItem>
+                <Link href='/about'>
+                  <a className='nav-link'>About</a>
                 </Link>
               </MDBNavItem>
               <MDBNavItem>

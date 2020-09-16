@@ -1,0 +1,21 @@
+$white: #fff !important;
+
+$black: #000 !important;
+
+.navbar-expand-md {
+    background: $white;
+
+    .navbar-brand {
+        color: $black;
+    }
+}
+
+.top-nav-collapse {
+    .navbar-brand {
+        color: $white;
+        strong{
+            color: $white;
+        }
+    }
+
+}

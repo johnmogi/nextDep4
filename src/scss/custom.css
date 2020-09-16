@@ -1,0 +1,16 @@
+.navbar-expand-md {
+  background: #fff !important;
+}
+
+.navbar-expand-md .navbar-brand {
+  color: #000 !important;
+}
+
+.top-nav-collapse .navbar-brand {
+  color: #fff !important;
+}
+
+.top-nav-collapse .navbar-brand strong {
+  color: #fff !important;
+}
+/*# sourceMappingURL=custom.css.map */
