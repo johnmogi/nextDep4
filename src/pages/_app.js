@@ -5,8 +5,12 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import '../scss/style.css'
 import Layout from '../components/Layout';
+// import WebFont from "webfontloader";
+
 
 export default class MyApp extends App {
+
+
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 

@@ -1,3 +1,19 @@
 @import './rtl.scss';
 @import './custom.scss';
- 
+ body{
+
+     font-family: "Assistant", Arial;
+     font-size: 1.7em;
+ }
+
+
+#stage { 
+    padding-right: 0;
+    padding-left: 0;
+    div{
+        padding-top:5vh;
+        background-attachment: fixed;
+        background-size: 100% !important;
+        height: 100% !important;
+    }
+}

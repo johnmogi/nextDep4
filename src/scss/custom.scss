@@ -1,21 +1,21 @@
-$white: #fff !important;
-
-$black: #000 !important;
+$white: #b0bec5 !important;
+$trans: transparent !important;
+$black: #212121 !important;
 
 .navbar-expand-md {
-    background: $white;
-
-    .navbar-brand {
-        color: $black;
-    }
+    background: $trans;
+    box-shadow: none;
 }
 
 .top-nav-collapse {
-    .navbar-brand {
+    background: $black;
+    .navbar-brand, .nav-link, .form-control  {
         color: $white;
         strong{
             color: $white;
         }
     }
-
+    .md-form input {
+        border-bottom: 1px solid $black;
+    }
 }

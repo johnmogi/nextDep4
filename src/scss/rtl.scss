@@ -2,3 +2,10 @@ body{
     direction: rtl;
     text-align:right;
 }
+.mr-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.md-form label {
+    margin-right: 2.5rem;
+    right: 0;
+}

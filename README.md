@@ -1,7 +1,12 @@
 https://github.com/JakubChm/nextjs-mdbreact
 
+
+https://pixabay.com/photos/chess-chess-board-large-chess-10x10-3791454/
+
+https://unsplash.com/s/photos/unicorn-chess
+
+
 <div align="center">
-<img src='https://github.com/JakubChm/nextjs-mdbreact/blob/master/src/assets/mdb-react-small.png?raw=true'  alt='mdbreact' align='center'>
 <br/>
 <h1>MDB React & Next.js 9.3</h1>
 <h2>MDBReact with create-next-app integration example.</h2>

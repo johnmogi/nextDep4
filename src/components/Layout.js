@@ -6,7 +6,7 @@ function Layout(props) {
   return (
     <>
       <NavBar />
-      <MDBContainer>{props.children}</MDBContainer>
+      <MDBContainer fluid id="stage">{props.children}</MDBContainer>
       <Footer />
       <style jsx global>{`
         #__next {

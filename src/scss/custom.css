@@ -1,16 +1,22 @@
 .navbar-expand-md {
-  background: #fff !important;
+  background: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.navbar-expand-md .navbar-brand {
-  color: #000 !important;
+.top-nav-collapse {
+  background: #212121 !important;
 }
 
-.top-nav-collapse .navbar-brand {
-  color: #fff !important;
+.top-nav-collapse .navbar-brand, .top-nav-collapse .nav-link, .top-nav-collapse .form-control {
+  color: #b0bec5 !important;
 }
 
-.top-nav-collapse .navbar-brand strong {
-  color: #fff !important;
+.top-nav-collapse .navbar-brand strong, .top-nav-collapse .nav-link strong, .top-nav-collapse .form-control strong {
+  color: #b0bec5 !important;
+}
+
+.top-nav-collapse .md-form input {
+  border-bottom: 1px solid #212121 !important;
 }
 /*# sourceMappingURL=custom.css.map */
